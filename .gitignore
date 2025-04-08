@@ -1,8 +1,8 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
-*.zip
-*.ai
-*.psd
+social-icons/*.zip
+social-icons/*.ai
+social-icons/*.psd
 
 # Compiled output
 /dist
