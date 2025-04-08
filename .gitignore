@@ -3,6 +3,10 @@
 social-icons/*.zip
 social-icons/*.ai
 social-icons/*.psd
+*.psd
+*.ai
+
+
 
 # Compiled output
 /dist
