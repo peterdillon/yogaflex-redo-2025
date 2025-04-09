@@ -89,7 +89,10 @@ section {
 	border-bottom: 0;
 	box-sizing: border-box;
     margin: 0 auto;
-    width: 60%;
+    width: 33rem;
+	@media only screen and (max-width: 780px) {
+		width: 100%;
+	}
 	article {
 
 		.intro-head {
@@ -147,7 +150,9 @@ section {
     }
 }
 .gc-btn {
-    margin-top: .35rem  ;
+    margin-top: .35rem;
+	border-width: 2px;
+	background-color: rgba(white, .2);
 }
 .soc-icons {
 	background-image: url('../images/social-media-icons.png'); 

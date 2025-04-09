@@ -116,7 +116,12 @@ section {
   border-bottom: 0;
   box-sizing: border-box;
   margin: 0 auto;
-  width: 60%;
+  width: 33rem;
+}
+@media only screen and (max-width: 780px) {
+  section {
+    width: 100%;
+  }
 }
 section article .intro-head {
   font-size: 2rem;
@@ -170,6 +175,8 @@ section article div span:last-of-type {
 
 .gc-btn {
   margin-top: 0.35rem;
+  border-width: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .soc-icons {

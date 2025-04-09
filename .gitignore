@@ -6,6 +6,7 @@ social-icons/*.psd
 images/*.psd
 *.psd
 *.ai
+yogaflex-files-2025/*
 
 
 
@@ -73,3 +74,4 @@ amplifytools.xcconfig
 .secret-*
 **.sample
 #amplify-do-not-edit-end
+.qodo
