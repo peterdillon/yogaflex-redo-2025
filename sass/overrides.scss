@@ -143,6 +143,26 @@ section {
     background-color: var(--main-theme);
 }
 
+.class-section {
+	border-radius: 1rem;
+	color: white;
+	padding: 2rem;
+	margin-bottom: 1rem;
+	h5 {
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 1.15rem;
+	}
+	.icon-position {
+		float: right;
+		font-size: 1.5rem;
+	}
+	&.hard {background-color: var(--purple);}
+	&.medium {background-color: var(--stop-2);}
+	&.easy {background-color: var(--stop-1);}
+	&.light {background-color: var(--stop-3);}
+}
 // Sprite
 .icon-ct {
     a {
@@ -172,7 +192,6 @@ section {
 .yh-w { background-position: -90px -30px }
 .fs-w { background-position: -120px -30px }
 
-
 footer {
     margin-top: 2rem;
     padding-bottom: 4rem;
@@ -185,7 +204,6 @@ footer {
         border-top: 1px solid var(--light-hr) ;
     }
 }
-
 
 .splide {
     height: 30rem;

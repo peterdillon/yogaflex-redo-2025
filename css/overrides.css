@@ -169,6 +169,35 @@ section article div span:last-of-type {
   background-color: var(--main-theme);
 }
 
+.class-section {
+  border-radius: 1rem;
+  color: white;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+.class-section h5 {
+  font-size: 1.5rem;
+}
+.class-section p {
+  font-size: 1.15rem;
+}
+.class-section .icon-position {
+  float: right;
+  font-size: 1.5rem;
+}
+.class-section.hard {
+  background-color: var(--purple);
+}
+.class-section.medium {
+  background-color: var(--stop-2);
+}
+.class-section.easy {
+  background-color: var(--stop-1);
+}
+.class-section.light {
+  background-color: var(--stop-3);
+}
+
 .icon-ct a {
   margin: 0.25rem;
 }
