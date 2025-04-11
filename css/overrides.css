@@ -109,6 +109,7 @@ h4 {
 
 .price-ct {
   background-color: var(--main-theme);
+  background: linear-gradient(40deg, var(--main-theme), var(--main-theme-hover));
   color: white;
 }
 
