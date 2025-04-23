@@ -2,6 +2,8 @@
     --main-theme: rgb(69,39,146);
     --main-theme-hover: rgba(69,39,146, .7);
     --light-hr: rgba(255,255,255, .5);
+	--main-rgb: 69,39,146;
+	--staff-bg: 217, 101, 112;
     --purple: #ae4f9b;
     --stop-1: #4285f4;
     --stop-2: #9b72cb;
@@ -64,21 +66,65 @@ a.sign-up {
 
 .pull-rt     { float: right;}
 .pull-lt     { float: left;}
-.t-align-rt  { text-align: right; }
+// Header right column
+.header-rt-col  { 
+	text-align: right;
+	padding: .5rem;
+	@media only screen and (max-width: 991px) {
+		text-align: center;
+	}
+ }
+ .header-lft-col {
+	@media only screen and (max-width: 991px) {
+		text-align: center;
+	}
+ }
+ .pad-md { 
+	padding: 2rem 0;
+	@media only screen and (max-width: 991px) {
+		padding: 1rem;
+	}
+ }
+// --------
 .t-align-ct  { text-align: center; }
 .t-align-lt  { text-align: left;}
 .remove-pad  { padding: 0 !important; }
-.pad-md      { padding: 2rem 0; }
+
 .pad-lg      { padding-top: 3rem; }
 .ct-margin {
     margin-top: 3rem;
     width: 80%;
 }
 // --------------------------------
+.teachers {
+	margin: .5rem;
+    margin-right: 0;
+    float: right;
+}
+.color-ct {
+	background-color: rgba(var(--main-rgb), .1);
+	padding: 1rem;
+	border-top-left-radius: 2rem;
+	margin-bottom: 1rem;
+	h1 {
+		margin-bottom: 0;
+		margin-top: -.5rem;
+	}
+	&.staff {
+		background-color: rgba(var(--staff-bg), .1);
+	}
+}
+.address-ct {
+	font-size: 1.25rem;
+	margin-bottom: 1rem;
+	
+}
 h4 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 600;
     color: var(--main-theme);
+	background-color: rgba(var(--main-rgb), .1);
+    border-radius: 6rem;
 }
 .price-ct {
     background-color: var(--main-theme);
@@ -144,11 +190,22 @@ section {
     background-color: var(--main-theme);
 }
 
+.items {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1rem;
+  }
 .class-section {
 	border-radius: 1rem;
 	color: white;
 	padding: 2rem;
-	margin-bottom: 1rem;
+	width: calc(33.33% - 1rem);
+	@media only screen and (max-width: 1199px) {
+		width: calc(50% - 1rem);
+	}
+	@media only screen and (max-width: 769px) {
+		width: 100%;
+	}
 	h5 {
 		font-size: 1.5rem;
 	}
@@ -164,7 +221,8 @@ section {
 	&.easy {background-color: var(--stop-1);}
 	&.light {background-color: var(--stop-3);}
 }
-// Sprite
+
+// ------ Sprite
 .icon-ct {
     a {
         margin: .25rem
@@ -210,4 +268,8 @@ footer {
     height: 30rem;
     width: 100%;
     margin: 0 auto;
+}
+// To address karmasoft schedule loader breaking out of container
+.position-relative {
+	position: relative;
 }
