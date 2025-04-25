@@ -3,10 +3,11 @@
     --main-theme-hover: rgba(69,39,146, .7);
     --light-hr: rgba(255,255,255, .5);
 	--main-rgb: 69,39,146;
+	--light-main: #edd2f3;
 	--staff-bg: 217, 101, 112;
     --purple: #ae4f9b;
     --stop-1: #4285f4;
-    --stop-2: #9b72cb;
+    --stop-2: #9c73cc;
     --stop-3: #d96570;
     --surface: #1b1c1d;
   }
@@ -93,7 +94,6 @@ a.sign-up {
 .pad-lg      { padding-top: 3rem; }
 .ct-margin {
     margin-top: 3rem;
-    width: 80%;
 }
 // --------------------------------
 .teachers {
@@ -104,7 +104,7 @@ a.sign-up {
 .color-ct {
 	background-color: rgba(var(--main-rgb), .1);
 	padding: 1rem;
-	border-top-left-radius: 2rem;
+	border-radius: 1rem;
 	margin-bottom: 1rem;
 	h1 {
 		margin-bottom: 0;
@@ -114,6 +114,12 @@ a.sign-up {
 		background-color: rgba(var(--staff-bg), .1);
 	}
 }
+
+.home-img-ct {
+	background-color: var(--light-main);
+	padding: 1rem;
+}
+
 .address-ct {
 	font-size: 1.25rem;
 	margin-bottom: 1rem;
@@ -128,7 +134,7 @@ h4 {
 }
 .price-ct {
     background-color: var(--main-theme);
-	background: linear-gradient(40deg, var(--main-theme), var(--main-theme-hover));
+	// background:	url(../images/pattern.svg) repeat,linear-gradient(40deg, var(--main-theme), var(--main-theme-hover));
     color: white;
 }
 
@@ -195,6 +201,10 @@ section {
 	flex-flow: row wrap;
 	gap: 1rem;
   }
+p, ol {
+	font-size: 1.15rem;
+	font-weight: 200;
+}
 .class-section {
 	border-radius: 1rem;
 	color: white;
@@ -209,17 +219,24 @@ section {
 	h5 {
 		font-size: 1.5rem;
 	}
-	p {
-		font-size: 1.15rem;
-	}
 	.icon-position {
 		float: right;
 		font-size: 1.5rem;
 	}
+	&.teacher { 
+		width: 100% !important;
+	 	margin-bottom: 1rem;
+	 }
 	&.hard {background-color: var(--purple);}
 	&.medium {background-color: var(--stop-2);}
 	&.easy {background-color: var(--stop-1);}
 	&.light {background-color: var(--stop-3);}
+}
+
+.photos {
+	 img {
+		padding: .5rem;
+	}
 }
 
 // ------ Sprite
@@ -227,6 +244,9 @@ section {
     a {
         margin: .25rem
     }
+}
+.t-align-rt {
+	text-align: right;
 }
 .gc-btn {
     margin-top: .35rem;
