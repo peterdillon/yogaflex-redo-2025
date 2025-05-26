@@ -58,7 +58,6 @@
         </a>
     </div>
 
-
     <div class="container-fluid">
         <div class="row full-size" style="display:block;">
             <div class="nav-container text-center" >
@@ -89,24 +88,23 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container text-center">
         <div class="row">
-            <h4 class="text-center">Locust Valley Schedule</h4>
-            <div id='container1' 
-                class='ksiframe-container position-relative' 
-                data-module='schedule' 
-                data-options='clean=true&by_branch=474&hide_branch=true&only_classes=true&hide_lesson=true' 
-                data-target='https://yogaflexny.karmasoft.io'>
+            <div class="col-lg-12" style="margin: 5rem 0;">
+            <h1>
+                404: Page Not Found
+            </h1>
+            <p>
+                The page you're looking for isn't here.<br /><br />
+                <a href="#" onclick='redirectToHomePage();'>Home page</a>
+            </p>
+            <script type='text/javascript'>
+              redirectToHomePage = function() {
+                window.location.href = "http://" + window.location.hostname;
+              }
+            </script>
             </div>
-            <script src="https://yogaflexny.karmasoft.io/assets/iframeapi.js"></script>
-        </div> 
-    </div>
-
-
-    <div class="container-fluid text-center pad-lg">
-        <a class="btn btn-success sign-up" href="https://yogaflexny.karmasoft.io/member/accounts/sign_up?in_studio_sign_up=true">
-            Sign up for a class now!
-        </a>
+        </div>
     </div>
 
 	<footer>		
