@@ -50,6 +50,10 @@ a.tel-top {
   border-radius: 99rem;
   width: 90%;
   margin: 1rem auto;
+  font-size: 1.5rem;
+  border: 2px solid var(--purple);
+  background-color: var(--purple);
+  color: white;
 }
 .custom-select, .custom-select::picker(select) {
   -webkit-appearance: initial;
