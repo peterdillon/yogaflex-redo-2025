@@ -46,6 +46,42 @@ a.tel-top {
   background-color: var(--main-theme);
 }
 
+.custom-select {
+  border-radius: 99rem;
+  width: 90%;
+  margin: 1rem auto;
+}
+.custom-select, .custom-select::picker(select) {
+  -webkit-appearance: initial;
+  line-height: 1.5;
+  appearance: base-select;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  background-color: var(--purple);
+}
+
+.half-size {
+  text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+  .full-size {
+    display: none !important;
+  }
+  .half-size {
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .full-size {
+    display: block !important;
+  }
+  .half-size {
+    display: none !important;
+  }
+}
 @media only screen and (max-width: 960px) {
   .sm-scr-margin {
     margin-top: 5rem !important;
@@ -113,7 +149,7 @@ a.sign-up:hover {
 }
 
 .pad-lg {
-  padding-top: 3rem;
+  padding: 1rem 0;
 }
 
 .ct-margin {
@@ -125,12 +161,21 @@ a.sign-up:hover {
   margin-right: 0;
   float: right;
 }
+@media only screen and (max-width: 768px) {
+  .teachers {
+    width: 100%;
+  }
+}
 
 .color-ct {
   background-color: rgba(var(--main-rgb), 0.1);
   padding: 1rem;
   border-radius: 1rem;
-  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+.color-ct ul {
+  font-size: 1.25rem;
 }
 .color-ct h1 {
   margin-bottom: 0;
@@ -145,6 +190,10 @@ a.sign-up:hover {
   padding: 1rem;
 }
 
+.img-margin {
+  margin: 0.5rem;
+}
+
 .address-ct {
   font-size: 1.25rem;
   margin-bottom: 1rem;
@@ -155,7 +204,8 @@ h4 {
   font-weight: 600;
   color: var(--main-theme);
   background-color: rgba(var(--main-rgb), 0.1);
-  border-radius: 6rem;
+  border-radius: 99rem;
+  padding: 1rem;
 }
 
 .price-ct {
@@ -226,9 +276,9 @@ section article div span:last-of-type {
   gap: 1rem;
 }
 
-p, ol {
-  font-size: 1.15rem;
-  font-weight: 200;
+p, ol, ul {
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 .class-section {
