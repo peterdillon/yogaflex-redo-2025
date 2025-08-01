@@ -12,6 +12,30 @@
   --surface: #1b1c1d;
 }
 
+.link-ct {
+  border: 2px solid var(--stop-2);
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 999rem;
+  width: 50%;
+  margin: 1rem auto;
+  text-align: center;
+  background-color: var(--light-main);
+  cursor: pointer;
+}
+.link-ct a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--stop-2);
+  text-decoration: none;
+}
+@media only screen and (max-width: 767px) {
+  .link-ct {
+    width: 100%;
+  }
+}
+
 a {
   color: var(--stop-3);
   text-decoration: underline;
@@ -93,7 +117,7 @@ a.tel-top {
 }
 
 .btn {
-  border-radius: 1.75rem;
+  border-radius: 99rem;
 }
 
 a.sign-up {
@@ -210,6 +234,11 @@ h4 {
   background-color: rgba(var(--main-rgb), 0.1);
   border-radius: 99rem;
   padding: 1rem;
+}
+@media only screen and (max-width: 780px) {
+  h4 {
+    font-size: 2rem;
+  }
 }
 
 .price-ct {

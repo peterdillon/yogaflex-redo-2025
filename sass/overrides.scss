@@ -11,6 +11,29 @@
     --stop-3: #d96570;
     --surface: #1b1c1d;
   }
+
+.link-ct {
+  border: 2px solid var(--stop-2);
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 999rem;
+  width: 50%;
+  margin: 1rem auto;
+  text-align: center;
+  background-color: var(--light-main);
+  cursor: pointer;
+  a {
+	
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+	color: var(--stop-2);
+	text-decoration: none;
+  }
+  @media only screen and (max-width: 767px) {
+		width: 100%;
+	}
+}
   
 a {
     color: var(--stop-3);
@@ -86,7 +109,7 @@ a.tel-top {
 }
 
 .btn {
-    border-radius: 1.75rem;
+    border-radius: 99rem;
 }
 a.sign-up {
     background-color: var(--main-theme);
@@ -176,6 +199,9 @@ h4 {
 	background-color: rgba(var(--main-rgb), .1);
     border-radius: 99rem;
 	padding: 1rem;
+	@media only screen and (max-width: 780px) {
+		font-size: 2rem;
+	}
 }
 .price-ct {
     background-color: var(--main-theme);

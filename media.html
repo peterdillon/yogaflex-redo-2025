@@ -59,8 +59,9 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="row full-size" style="display:block;">
             <div class="nav-container text-center">
+                <a href="/">Home</a>
                 <a href="locust-valley-schedule.html">Locust Valley</a>
                 <a href="commack-schedule.html">Commack</a>
                 <a href="welcome.html">Welcome Information</a>
@@ -71,6 +72,21 @@
                 <a href="faq.html">FAQ</a>
                 <a href="events.html">Events</a>
             </div>
+        </div>
+        <div class="row half-size" style="display:none;">
+            <select class="custom-select" name="Menu" id="Menu" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                <option value="">Menu...</option>
+                <option value="/">Home</option>
+                <option value="locust-valley-schedule.html">Locust Valley Schedule</option>
+                <option value="commack-schedule.html">Commack Schedule</option>
+                <option value="welcome.html">Welcome</option>
+                <option value="location.html">Locations</option>
+                <option value="classes.html">Class Descriptions</option>
+                <option value="teachers.html">Teachers</option>
+                <option value="media.html">Media</option>
+                <option value="faq.html">FAQ</option>
+                <option value="events.html">Events</option>
+            </select>
         </div>
     </div>
 

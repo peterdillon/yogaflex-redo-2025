@@ -20,7 +20,7 @@
     ================================================== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/overrides.css">
+    <link rel="stylesheet" href="css/overrides.css?cache=1234">
 </head>
 <body>
 	
@@ -64,7 +64,8 @@
 
     <div class="container-fluid">
         <div class="row full-size" style="display:block;">
-            <div class="nav-container text-center" >
+            <div class="nav-container text-center">
+                <a href="/">Home</a>
                 <a href="locust-valley-schedule.html">Locust Valley</a>
                 <a href="commack-schedule.html">Commack</a>
                 <a href="welcome.html">Welcome Information</a>
@@ -79,6 +80,7 @@
         <div class="row half-size" style="display:none;">
             <select class="custom-select" name="Menu" id="Menu" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
                 <option value="">Menu...</option>
+                <option value="/">Home</option>
                 <option value="locust-valley-schedule.html">Locust Valley Schedule</option>
                 <option value="commack-schedule.html">Commack Schedule</option>
                 <option value="welcome.html">Welcome</option>
@@ -125,31 +127,31 @@
                 </div>
                 <div>
                     <span>Single Class:</span>
-                    <span>$30</span>
+                    <span>$35</span>
                 </div>
                 <div>
                     <span>5 Class Card:</span>
-                    <span>$120 (3 month expiration)</span>
+                    <span>$135 (3 month expiration)</span>
                 </div>
                 <div>
                     <span>10 Class Card:</span>
-                    <span>$220 (3 month expiration)</span>
+                    <span>$240 (3 month expiration)</span>
                 </div>
                 <div>
                     <span>25 Class Card:</span>
-                    <span>$440 (3 month expiration)</span>
+                    <span>$475 (3 month expiration)</span>
                 </div>
                 <div>
                     <span>Monthly Auto-Debit:</span>
-                    <span>$170</span>
+                    <span>$185</span>
                 </div>
                 <div> 
                     <span>Yearly Unlimited:</span>
-                    <span>$1850</span>
+                    <span>$2000</span>
                 </div>
                 <div>
                     <span>6 Month Unlimited:</span>
-                    <span>$975</span>
+                    <span>$1100</span>
                 </div>
                 <div class="intro-head t-align-ct">
                     <p>Class packages cannot be shared</p>
@@ -189,10 +191,20 @@
     <!-- Elfsight Instagram Feed | YogaFlexNY -->
     <div class="container text-center pad-lg">
         <h4>YogaFlex on Instagram</h4>
-        <p><a href="https://www.instagram.com/yogaflexcommack">Commack Instagram</a></p>
-        <p><a href="https://www.instagram.com/yogaflexlocustvalley">Locust Valley Instagram</a></p>
-        <script src="https://static.elfsight.com/platform/platform.js" async></script>
-        <div class="elfsight-app-fa74e8dc-52e2-4387-b257-645f62ee5f36" data-elfsight-app-lazy></div>
+        <div class="link-ct">
+             <a href="https://www.instagram.com/yogaflexcommack" target="_blank">
+                <span class="soc-icons ig"></span>
+                &nbsp; Commack Instagram
+            </a>
+        </div>
+        <div class="link-ct">
+            <a href="https://www.instagram.com/yogaflexlocustvalley" target="_blank">
+                <span class="soc-icons ig"></span>
+                &nbsp; Locust Valley Instagram
+            </a>
+        </div>
+        <!-- <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-fa74e8dc-52e2-4387-b257-645f62ee5f36" data-elfsight-app-lazy></div> -->
     </div>
 
     <div class="container-fluid text-center pad-lg">
